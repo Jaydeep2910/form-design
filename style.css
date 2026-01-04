@@ -104,7 +104,7 @@ a:hover {
   font-size: 16px;
   background: transparent;
   color: var(--second-color);
-  padding: 18px 50px 8px 20px;
+  padding-inline: 20px 50px;
   border: 2px solid var(--primary-color);
   border-radius: 30px;
   outline: none;
@@ -119,13 +119,14 @@ a:hover {
   top: 15px;
   left: 20px;
   transition: 0.2s;
+  padding: 0 8px;
   pointer-events: none;
 }
 
 .input-field:focus ~ .label,
-.input-field:valid .label {
+.input-field:not(:placeholder-shown) ~ .label {
   position: absolute;
-  top: -10px;
+  top: -12px;
   left: 20px;
   font-size: 14px;
   background-color: var(--primary-color);
