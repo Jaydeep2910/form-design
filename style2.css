@@ -131,6 +131,11 @@ a:hover {
   padding: 0 10px;
 }
 
+.terms {
+  display: flex;
+  font-size: 15px;
+}
+
 .icon {
   position: absolute;
   top: 18px;
